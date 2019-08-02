@@ -1,0 +1,322 @@
+html {
+    font: 10px/1.5 Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+
+/* Global */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-1 {
+    height: 3.8rem;
+    background-color: #e8491d;
+    border: 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    color: #fff;
+}
+
+.dark {
+    padding: 1.5rem;
+    background: #35424a;
+    color: #fff;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+/* news letter*/
+
+#news-letter {
+    padding: 1.5rem;
+    color: #fff;
+    background: #35424a;
+}
+
+#news-letter h2 {
+    float: left;
+    font-size: 2.2rem;
+}
+
+#news-letter form {
+    float: right;
+    margin-top: 1.5rem;
+}
+
+#news-letter [type="email"] {
+    padding: 0.4rem;
+    height: 2.5rem;
+    width: 25rem;
+}
+
+
+/* footer */
+
+footer {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 2rem;
+    color: #fff;
+    background-color: #e8491d;
+    margin-top: 1rem;
+}
+
+
+/**********************************
+Home Page
+***********************************/
+
+
+/* header */
+
+header {
+    background-color: #35424a;
+    color: #fff;
+    min-height: 7rem;
+    padding-top: 3rem;
+    border-bottom: 3px solid #a8491d;
+}
+
+header a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+}
+
+header li {
+    display: inline;
+    padding: 0 2rem 0 2rem;
+}
+
+header #banding {
+    float: left;
+}
+
+header #banding h1 {
+    margin: 0;
+    font-size: 3rem;
+}
+
+header nav {
+    float: right;
+    margin-top: 10px;
+}
+
+header .highligh,
+header .current {
+    color: #e8491d;
+    font-weight: bold;
+}
+
+header a:not(.current):hover {
+    color: #ccc;
+    font-weight: bold;
+}
+
+
+/* show case */
+
+#show-case {
+    min-height: 40rem;
+    background: url("https://images.unsplash.com/photo-1497091071254-cc9b2ba7c48a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1353&q=80") no-repeat;
+    text-align: center;
+    color: #fff;
+}
+
+#show-case h1 {
+    margin-top: 10rem;
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
+}
+
+#show-case p {
+    font-size: 2rem;
+}
+
+
+/* boxes */
+
+#boxes {
+    padding: 2rem;
+}
+
+#boxes .box {
+    box-sizing: border-box;
+    float: left;
+    text-align: center;
+    width: 32%;
+    padding: 1rem;
+}
+
+#boxes .box img {
+    width: 9rem;
+    height: auto;
+}
+
+#boxes .box h3 {
+    font-size: 1.9rem;
+}
+
+#boxes .box p {
+    font-size: 1.5rem;
+}
+
+
+/************************************
+About page
+*************************************/
+
+
+/* articel aboot us*/
+
+article#main-col {
+    float: left;
+    width: 65%;
+}
+
+article#main-col h1 {
+    font-size: 3.3rem;
+}
+
+article#main-col p {
+    font-size: 1.6rem;
+}
+
+
+/* aside*/
+
+aside#side-bar {
+    float: right;
+    width: 30%;
+    margin-top: 3rem;
+}
+
+aside#side-bar h2 {
+    font-size: 2rem;
+}
+
+aside#side-bar p {
+    font-size: 1.6rem;
+}
+
+
+/****************************************
+Services Page
+****************************************/
+
+
+/* services */
+
+ul#services li {
+    padding: 2rem;
+    border: 1px solid #ccc;
+    margin-bottom: 0.5rem;
+    background-color: #e6e6e6;
+}
+
+ul#services li h2 {
+    font-size: 2rem;
+}
+
+ul#services li p {
+    font-size: 1.6rem;
+}
+
+aside#side-bar .quote input,
+aside#side-bar .quote textarea {
+    width: 90%;
+    padding: 0.5rem;
+}
+
+aside#side-bar h3 {
+    font-size: 1.8rem;
+}
+
+form.quote label,
+form.quote button,
+form.quote input,
+form.quote button {
+    font-size: 1.6rem;
+}
+
+
+/*****************************************************
+responsive 
+*****************************************************/
+
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 8px;
+        box-sizing: border-box;
+    }
+    header #banding {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    header nav {
+        float: none;
+        text-align: center;
+        padding-bottom: 2rem;
+    }
+    #show-case h1 {
+        margin-top: 4rem;
+        font-size: 4rem;
+    }
+    #news-letter {
+        text-align: center;
+    }
+    #news-letter h2,
+    #news-letter form {
+        float: none;
+    }
+    #news-letter [type="email"],
+    #news-letter button {
+        display: block;
+        width: 100%;
+        margin: 0.5rem;
+    }
+    #boxes .box {
+        float: none;
+        text-align: center;
+        width: 100%;
+    }
+    article#main-col,
+    aside#side-bar {
+        margin: auto;
+        float: none;
+        width: 100%;
+    }
+    aside#side-bar {
+        box-sizing: border-box;
+    }
+    aside#side-bar .quote input,
+    aside#side-bar .quote textarea {
+        width: 80%;
+        padding: 0.5rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 7px;
+        box-sizing: border-box;
+    }
+}
